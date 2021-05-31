@@ -26,7 +26,8 @@ python3 main.py [OPTIONS]
 > Note: See *OPTIONS* in [arguments guide](https://github.com/levankhelo/net-speed#arguments-guide)
 
 ## Arguments guide
-### Arguments
+This script does not have any required arguments
+### Optionals
 ```
 -h, --help                            show help message
 --filename FILENAME, -f FILENAME      name of file where network speed airport xml  will be downloaded and .XMLinfo will be appended to name
