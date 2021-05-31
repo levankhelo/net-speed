@@ -27,7 +27,7 @@ python3 main.py [OPTIONS]
 
 ### Arguments guide
 ```
--h, --help                            show this help message and exit
+-h, --help                            show help message
 --filename FILENAME, -f FILENAME      name of file where network speed airport xml  will be downloaded and .XMLinfo will be appended to name
 --refresh REFRESH, -t REFRESH         refresh rate of display
 --convert, -c                         convert KiB to KB
