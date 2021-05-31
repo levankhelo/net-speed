@@ -10,8 +10,8 @@ parser.add_argument('--filename','-f', type=str, default="speed",
                     help='name of file where network speed airport xml will be downloaded and .xml.tmp will be appended to name')
 parser.add_argument('--refresh','-t', type=float, default=1,
                     help='refresh rate of display')
-parser.add_argument('--convert','-c', action='store_true', default=False,
-                    help='convert KiB to KB')
+parser.add_argument('--convert','-c', action='store_true', default=True,
+                    help='convert KB to KiB')
 parser.add_argument('--mb','-m', action='store_true', default=False,
                     help='convert KiB/KB to Mib/MB')
 parser.add_argument('--single','-s', action='store_true', default=False,
@@ -40,12 +40,12 @@ def calculate():
     if args.mb:     
         speed = speed/1024
         max = max/1024
-        if args.convert:
+        if not args.convert:
             unit = "MB"
         else:
             unit = "MiB"
 
-    if args.convert:
+    if not args.convert:
         speed = speed*8
         max = max*8
         if not args.mb:
