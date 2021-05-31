@@ -25,7 +25,8 @@ python3 main.py [OPTIONS]
 ```
 > Note: See *OPTIONS* in [arguments guide](https://github.com/levankhelo/net-speed#arguments-guide)
 
-### Arguments guide
+## Arguments guide
+### Arguments
 ```
 -h, --help                            show help message
 --filename FILENAME, -f FILENAME      name of file where network speed airport xml  will be downloaded and .XMLinfo will be appended to name
@@ -35,7 +36,7 @@ python3 main.py [OPTIONS]
 --single, -s                          Run application only one time, instead of refreshing display
 ```
 
-Examples:  
+### Examples
 1. `python3 --filename netspeed --refresh 5 --convert` same as `python3 -f netspeed -t 5 -c`
 2. `python3 --filename netspeed --single --convert` same as `python3 -f netspeed -s -c`
 3. `python3 --single` same as `python3 -s`
