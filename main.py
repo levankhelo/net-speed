@@ -7,7 +7,7 @@ import sys
 parser = argparse.ArgumentParser(description='Parse netowrk results')
 
 parser.add_argument('--filename','-f', type=str, default="speed",
-                    help='name of file where network speed airport xml will be downloaded and .XMLinfo will be appended to name')
+                    help='name of file where network speed airport xml will be downloaded and .xml.tmp will be appended to name')
 parser.add_argument('--refresh','-t', type=float, default=1,
                     help='refresh rate of display')
 parser.add_argument('--convert','-c', action='store_true', default=False,
@@ -18,7 +18,7 @@ parser.add_argument('--single','-s', action='store_true', default=False,
                     help='Run application only one time, instead of refreshing display')
 args = parser.parse_args()
 
-args.filename = f"{args.filename}.XMLinfo"
+args.filename = f"{args.filename}.xml.tmp"
 
 
 
@@ -65,6 +65,7 @@ def display():
 def signal_handler(sig, frame):
     args.single = True
     run()
+    os.remove(args.filename)
     sys.exit(0)
 
 signal.signal(signal.SIGINT, signal_handler)
