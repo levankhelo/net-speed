@@ -32,7 +32,7 @@ This script does not have any required arguments
 -h, --help                            show help message
 --filename FILENAME, -f FILENAME      name of file where network speed airport xml  will be downloaded and .XMLinfo will be appended to name
 --refresh REFRESH, -t REFRESH         refresh rate of display
---convert, -c                         convert KiB to KB
+--convert, -c                         convert KB to KiB
 --mb, -m                              convert KiB/KB to Mib/MB
 --single, -s                          Run application only one time, instead of refreshing display
 ```
