@@ -34,3 +34,9 @@ python3 main.py [OPTIONS]
 --mb, -m                              convert KiB/KB to Mib/MB
 --single, -s                          Run application only one time, instead of refreshing display
 ```
+
+Examples:  
+1. `python3 --filename netspeed --refresh 5 --convert` same as `python3 -f netspeed -t 5 -c`
+2. `python3 --filename netspeed --single --convert` same as `python3 -f netspeed -s -c`
+3. `python3 --single` same as `python3 -s`
+4. `python3 --refresh 0.1` same as `python3 -t 0.1`
